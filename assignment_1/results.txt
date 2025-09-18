@@ -1,0 +1,39 @@
+Problem 1 — Value Iteration (gamma=0.85, epsilon=0.0001):
+  V*(Facebook) = -6.290602
+  V*(Class1) = -5.627831
+  V*(Class2) = -2.245645
+  V*(Class3) = 0.975382
+  V*(Pub) = 0.568141
+  V*(Sleep) = -5.346938
+  V*(Pass) = 5.455177
+iterations = 57
+upper_bound ≲ 83
+
+------------------------------------------------------------
+
+Problem 2 — Q-Value Iteration (gamma=0.85, epsilon=0.0001):
+  Q*(Facebook, a=0) = -6.290602
+  Q*(Class1, a=0) = -5.627831
+  Q*(Class2, a=0) = -2.245645
+  Q*(Class3, a=0) = 0.975382
+  Q*(Pub, a=0) = 0.568141
+  Q*(Sleep, a=0) = -5.346938
+  Q*(Pass, a=0) = 5.455177
+iterations = 57
+
+------------------------------------------------------------
+
+Problem 3 — Analysis (epsilon sweep):
+  Epsilon sweep (Value Iteration):
+  epsilon=1e-02 -> iterations=28, upper_bound≈55
+  epsilon=1e-04 -> iterations=57, upper_bound≈83
+  epsilon=1e-06 -> iterations=85, upper_bound≈111
+  epsilon=1e-08 -> iterations=113, upper_bound≈140
+  epsilon=1e-10 -> iterations=142, upper_bound≈168
+
+  Epsilon sweep (Q-Value Iteration):
+  epsilon=1e-02 -> iterations=28
+  epsilon=1e-04 -> iterations=57
+  epsilon=1e-06 -> iterations=85
+  epsilon=1e-08 -> iterations=113
+  epsilon=1e-10 -> iterations=142
