@@ -9,15 +9,6 @@ This assignment implements Value Iteration and Q-Value Iteration in a discrete M
 - `main.py`: Runs both algorithms and saves results to a file
 - `results.txt`: Summary of results generated after running
 
-### Requirements
-- Python 3.9+
-- NumPy
-
-Installation example:
-```bash
-pip install numpy
-```
-
 ### How to Run
 From the project root, execute the following to run the code under `assignment_1`:
 ```bash
@@ -25,19 +16,27 @@ python 2025rl/assignment_1/main.py
 ```
 
 ### Output
-- A `results.txt` file will be generated containing:
-  - Converged `V*(s)` and the number of iterations for Value Iteration
-  - Converged `Q*(s, a)` (showing one action column, e.g., `a=0`) and the number of iterations for Q-Value Iteration
+- A `results.txt` file is generated with:
+  - Problem 1 — Value Iteration (gamma, epsilon), `V*(s)` and iterations, plus an iteration upper bound
+  - Problem 2 — Q-Value Iteration (gamma, epsilon), `Q*(s,a)` and iterations
+  - Problem 3 — Analysis (epsilon sweep): iterations vs. theoretical upper bound
 
-Example (format):
+Example (abridged):
 ```text
-Value Iteration (gamma=...):
-V*(s) = [...]
+Problem 1 — Value Iteration (gamma=..., epsilon=...):
+  V*(...) = ...
 iterations = ...
-
-Q-Value Iteration (gamma=...):
-Q*(s) = [...]
+upper_bound ≲ ...
+------------------------------------------------------------
+Problem 2 — Q-Value Iteration (gamma=..., epsilon=...):
+  Q*(..., a=0) = ...
 iterations = ...
+------------------------------------------------------------
+Problem 3 — Analysis (epsilon sweep):
+  Epsilon sweep (Value Iteration):
+    epsilon=1e-04 -> iterations=..., upper_bound≈...
+  Epsilon sweep (Q-Value Iteration):
+    epsilon=1e-04 -> iterations=...
 ```
 
 ### Notes
