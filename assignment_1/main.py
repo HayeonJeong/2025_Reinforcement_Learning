@@ -1,6 +1,6 @@
 import os
 import numpy as np
-from mdp_env import P, R, GAMMA, states
+from env import P, R, GAMMA, states
 from value_iteration import value_iteration
 from q_value_iteration import q_value_iteration
 

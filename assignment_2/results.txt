@@ -1,0 +1,15 @@
+Final State Values V(s):
+V(0) = 100.00
+V(1) = 90.00
+V(2) = 80.00
+V(3) = 70.00
+V(4) = 60.00
+V(5) = 50.00
+
+Action-Value Function Q(s,a):
+State 0: Left=N/A, Right=N/A (Terminal)
+State 1: Left=200.00, Right=80.00
+State 2: Left=90.00, Right=70.00
+State 3: Left=80.00, Right=60.00
+State 4: Left=70.00, Right=100.00
+State 5: Left=N/A, Right=N/A (Terminal)
